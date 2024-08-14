@@ -25,10 +25,12 @@ const processor =  async function(job: Job ): Promise<Object> {
             }
         }
         SocketClient.getClient()?.emit('dl-progress', msg)
+
         mp3Convert && await convertor.mp3Convert(
             downloadedAudio.source,
             String(downloadedAudio.source).replace(String(downloadedAudio.extension), 'mp3')
         );
+
         if (mp3Convert) {
             const convertedAudio = await convertor.mp3Convert(downloadedAudio.source);
         }
