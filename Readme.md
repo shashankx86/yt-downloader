@@ -1,5 +1,7 @@
 ## Youtube Audio downloader for videos and playlist
 
+![](https://github.com/shashankx86/yt-downloader/blob/dev/server/public/assets/images/demo.gif?raw=true)
+
 Currently supports only mp3.
 
 Consist of 3 services: 
